@@ -342,6 +342,9 @@ public class ValgrindSaxParser implements Serializable
 	{
 		SAXParserFactory factory = SAXParserFactory.newInstance();
 		factory.setNamespaceAware(true);
+		factory.setFeature("http://xml.org/sax/features/external-general-entities", false);
+		factory.setFeature("http://xml.org/sax/features/external-parameter-entities", false);
+		factory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
 		SAXParser saxParser = factory.newSAXParser();
 		
 		Handler handler = new Handler();
