@@ -85,7 +85,7 @@ public class ValgrindResult implements Serializable
 
 	/**
 	 *
-	 * @param link expected to be in format "id=<executable name>,<unique error id>"
+	 * @param link expected to be in format "id=&lt;executable name&gt;,&lt;unique error id&gt;"
 	 * @param request
 	 * @param response
 	 * @return valgrind detail(s)
