@@ -8,6 +8,8 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
+import static org.apache.commons.text.StringEscapeUtils.escapeHtml4;
+
 import org.jenkinsci.plugins.valgrind.model.ValgrindAuxiliary;
 import org.jenkinsci.plugins.valgrind.model.ValgrindError;
 import org.jenkinsci.plugins.valgrind.model.ValgrindErrorKind;
@@ -329,7 +331,7 @@ public class ValgrindSaxParser implements Serializable
 			if ( data == null )
 				return;
 			
-			data.append(new String(ch,start,length));
+			data.append(escapeHtml4(new String(ch,start,length)));
 		}
 		
 		public ValgrindReport getReport()

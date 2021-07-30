@@ -175,7 +175,7 @@ public class ValgrindSaxParserTest
 
 		final String expectedSuppression =
         "{\n" +
-		"   <insert_a_suppression_name_here>\n" +
+		"   insert_a_suppression_name_here\n" +
 		"   Memcheck:Addr1\n" +
 		"   fun:memcpy@@GLIBC_2.14\n" +
 		"   fun:access_already_freed_memory_memcpy\n" +

@@ -87,7 +87,7 @@
     <rawtext>
 <![CDATA[
 {
-   <insert_a_suppression_name_here>
+   insert_a_suppression_name_here
    Memcheck:Addr1
    fun:memcpy@@GLIBC_2.14
    fun:access_already_freed_memory_memcpy
